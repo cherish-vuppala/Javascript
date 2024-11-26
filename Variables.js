@@ -25,3 +25,6 @@ console.log(typeof obj);
 obj2 = 23;
 console.log(obj2);
 console.log(typeof obj2);
+
+// ECMA it's a standard for js
+// use 'strict' , it tells the runtime that we are using new version of javascript
