@@ -1,3 +1,11 @@
+// Primitive Types:
+// Number: 42, 3.14
+// String: "Hello", 'World'
+// Boolean: true, false
+// Undefined: A variable declared but not assigned.
+// Null: Intentional absence of value.
+// BigInt: For integers larger than 2^53 - 1.
+// Symbol: Unique identifiers.
 let age = 1;
 console.log(typeof age);
 
