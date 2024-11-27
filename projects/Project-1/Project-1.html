@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Changer</title>
+    <link rel="stylesheet" href="project1.css" />
+  </head>
+  <body>
+    <h1>Click on the color boxes and witness the Magic!</h1>
+    <div class="colors">
+      <div class="color" id="red"></div>
+      <div class="color" id="green"></div>
+      <div class="color" id="blue"></div>
+    </div>
+  </body>
+  <script>
+    const body = document.body;
+    const colorBoxes = Array.from(document.querySelectorAll(".color"));
+    // console.log(typeof colorBoxes);
+
+    colorBoxes.forEach((colorBox) =>
+      colorBox.addEventListener("click", changeBackgroundColor)
+    );
+    function changeBackgroundColor() {
+      // console.log(body, this);
+      if (this.id === "red") body.style.backgroundColor = "red";
+      else if (this.id === "green") body.style.backgroundColor = "green";
+      else if (this.id === "blue") body.style.backgroundColor = "blue";
+    }
+  </script>
+</html>
